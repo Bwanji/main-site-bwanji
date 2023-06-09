@@ -22,14 +22,14 @@ ol[role="list"] {
 
 /* Set core root defaults */
 html:focus-within {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 
 html,
 body {
-  /* height: 100%; */
+  height: 100%;
 }
 
 body {
@@ -64,43 +64,6 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* ////////////////////////////////////////////////// */
-
-/* Custom-Fonts Here */
-
-@font-face {
-  font-family: "Champagne & Limousines";
-  src: url("fonts/Champagne-&-Limousines.ttf");
-}
-
-@font-face {
-  font-family: "Champagne & Limousines Italic";
-  src: url("fonts/Champagne-&-Limousines-Italic.ttf");
-}
-
-@font-face {
-  font-family: "Champagne & Limousines Bold";
-  src: url("fonts/Champagne-&-Limousines-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Champagne & Limousines Bold Italic";
-  src: url("fonts/Champagne-&-Limousines.ttf");
-}
-
-font-family: "Noto Sans", sans-serif;
-font-family: "Press Start 2P", cursive;
-
-/* /////////////////////////////////////////////
-*/
-
-/* reset & Prettify (delete this) */
-
-body {
-  font-family: "Noto Sans", sans-serif;
-  background: rgb(250, 250, 250);
 }
 
 /* =====================
@@ -282,13 +245,19 @@ body {
   }
 }
 
+/* //////////////////--Buttons--///////////////// */
 
-/* /////////////////--Buttons--///////////////////// */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
 .button {
   display: inline-block;
-  width: 170px;
-  background-color: #e8f3fa;
-  color: #aa0a0a;
+  width: 300px;
+  background-color: rgb(232, 243, 250);
+  color: rgb(43, 15, 56);
   padding: 15px 32px;
   border-radius: 5px;
   text-decoration: none;
@@ -302,26 +271,43 @@ body {
   box-shadow: #0f0f0f 2px 2px 2px;
 }
 
-
 .button-2 {
-  display: inline-block;
-  width: 170px;
-  background-color: #9DC08B;
-  color: #aa0a0a;
-  padding: 15px 32px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  /* margin:0 auto; */
-  margin-top: 30px;
-  margin-left: 100px;
-  text-align: center;
-  box-shadow: #0f0f0f 2px 2px 2px;
+  background-color: rgb(157, 192, 139);
 }
 
 .button:hover {
-  background-color: #f9dbbb;
-  color: #4e6e81;
+  background-color: rgb(249, 219, 187);
+  color: rgb(43, 15, 56);
+}
+
+@media screen and (max-width: 800px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    width: 300px;
+    background-color:  rgb(232, 243, 250);
+    color: rgb(43, 15, 56);
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    /* margin:0 auto; */
+    margin-top: 5px;
+    /* margin-left: 100px; */
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: #0f0f0f 2px 2px 2px;
+  }
+
+  .button-2 {
+    background-color:  rgb(15, 95, 145);
+  }
 }
 
 /* //////////////////--Links--///////////////// */
@@ -334,60 +320,32 @@ body {
   color: #f9dbbb;
 }
 
+/* ////////////////////////////////////////////// */
 
-/* /////////////// Sections Settings ///////////// */
-
-/* //////--Scroll Snap Sections--/////// */
+/* Scroll Snap Setting*/
 
 html {
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 70px;
 }
 
-.section-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
-.section-item-1,
-.section-item-2,
-.section-item-3,
-.section-item-4 {
-  height: 100vh;
-  width: 99.2vw;
+section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
-.section-item-1 {
-  background-image: url("images/pattern-1.png");
-  background-size: contain;
-  margin-top: 50px;
-}
 
-.section-item-2 {
-  background-image: url("images/pattern-02.png");
-  background-size: contain;
-}
+/* //////////////--Web Design Section--/////////////// */
 
-.section-item-3 {
-  background-image: url("images/pattern-03.png");
+#web-design {
+  /* background-image: url("images/pattern-1.png"); */
   background-size: contain;
   
+  height: 100vh;
+  padding-top: 50px;
 }
 
-.section-item-4 {
-  background-image: url("images/pattern-06.png");
-  background-size: contain;
-}
-
-
-
-
-/* //////////////--Hero Section--/////////////// */
-
-.hero-container {
+.web-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,23 +355,20 @@ html {
   height: 100vh;
 }
 
-.hero-image img {
-  width: 700px;
+.web-image img {
+  width: 100%;
   height: auto;
-  padding-top: 0px;
-
 }
 
-
-.hero-text h1 {
+.web-text h1 {
   font-family: "Noto Sans", sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   text-align: center;
   color: rgb(249, 219, 187);
 }
 
-.hero-text h4 {
+.web-text h4 {
   font-family: "Noto Sans", sans-serif;
   text-align: center;
   font-size: 20px;
@@ -421,8 +376,60 @@ html {
   color: rgb(249, 219, 187);
 }
 
+/* Web Design Media Queries */
 
-/* ////////////--ICM Section--////////////// */
+@media screen and (max-width: 800px) {
+  #web-design {
+    height: 100vh;
+  }
+
+  .web-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(43, 15, 56, 0.9);
+    height: 100vh;
+  }
+
+  .web-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
+
+  .web-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .web-text h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(249, 219, 187);
+  }
+
+  .web-text h4 {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(249, 219, 187);
+  }
+}
+
+
+/* ////////--Internet Content Management--//////// */
+
+#content-creation {
+  /* background-image: url("images/pattern-02.png"); */
+  background-size: contain;
+  height: 100vh;
+  padding-top: 50px;
+}
 
 .icm-container {
   display: flex;
@@ -430,19 +437,18 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(78, 110, 129, 0.9) ;
+  background-color: rgb(179, 110, 84);
   height: 100vh;
 }
 
 .icm-image img {
-  width: 500px;
+  width: 150%;
   height: auto;
 }
 
-
 .icm-text h1 {
   font-family: "Noto Sans", sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   text-align: center;
   color: rgb(249, 219, 187);
@@ -454,11 +460,59 @@ html {
   font-size: 20px;
   font-weight: 100;
   color: rgb(249, 219, 187);
-
 }
 
 
-/* /////////--Media Section--///////// */
+/* ICM Media Queries */
+@media screen and (max-width: 800px) {
+  #content-creation {
+    height: 100vh;
+  }
+
+  .icm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(179, 110, 84);
+    height: 100vh;
+  }
+
+  .icm-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
+
+  .icm-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .icm-text h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(249, 219, 187);
+  }
+
+  .icm-text h4 {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(249, 219, 187);
+  }
+}
+
+/* //////--Media Services--////// */
+
+#media-services {
+  height: 100vh;
+  padding-top: 50px;
+}
 
 .media-container {
   display: flex;
@@ -466,22 +520,21 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(254, 200, 104, 0.5);
+  background-color: rgb(82, 109, 130);
   height: 100vh;
 }
 
 .media-image img {
-  width: 450px;
+  width: 150%;
   height: auto;
 }
 
-
 .media-text h1 {
   font-family: "Noto Sans", sans-serif;
-  text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
-  color: rgb(43, 15, 56);
+  text-align: center;
+  color: rgb(249, 219, 187);
 }
 
 .media-text h4 {
@@ -489,11 +542,60 @@ html {
   text-align: center;
   font-size: 20px;
   font-weight: 100;
-  color: rgb(43, 15, 56);
-
+  color: rgb(249, 219, 187);
 }
 
-/* //////////--Portfolio--////////// */
+/* Media Queries Media Services */
+@media screen and (max-width: 800px) {
+  #media-services {
+    height: 100vh;
+  }
+
+  .media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(82, 109, 130);
+    height: 100vh;
+  }
+
+  .media-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
+
+  .media-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .media-text h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(249, 219, 187);
+  }
+
+  .media-text h4 {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(249, 219, 187);
+  }
+}
+
+
+/* /////----Our Work----////// */
+
+#our-work {
+  height: 100vh;
+  padding-top: 50px;
+}
 
 .portfolio-container {
   display: flex;
@@ -501,22 +603,21 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(157, 192, 139, 0.9);
+  background-color: rgb(92, 137, 132);
   height: 100vh;
 }
 
 .portfolio-image img {
-  width: 400px;
+  width: 150%;
   height: auto;
 }
 
-
 .portfolio-text h1 {
   font-family: "Noto Sans", sans-serif;
-  text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
-  color: rgb(43, 15, 56);
+  text-align: center;
+  color: rgb(249, 219, 187);
 }
 
 .portfolio-text h4 {
@@ -524,157 +625,50 @@ html {
   text-align: center;
   font-size: 20px;
   font-weight: 100;
-  color: rgb(43, 15, 56);
+  color: rgb(249, 219, 187);
 }
 
 
-/* ////////---Footer--///////// */
+/* Our Work Media Queries */
+@media screen and (max-width: 800px) {
+  #our-work {
+    height: 100vh;
+  }
 
-footer {
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(92, 137, 132);
+    height: 100vh;
+  }
 
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  background-color: rgb(118, 76, 138);
-  width: 99.2vw;
-}
+  .portfolio-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
 
-.footer-container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 60px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+  .portfolio-text {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-}
+  .portfolio-text h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(249, 219, 187);
+  }
 
-.footer-item {
- 
-  flex: 1;
-
-}
-
-
-.footer-logo p {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  padding-left: 20px;
-  color: #e8f3fa;
-
-}
-
-.footer-logo img {
-  width: 150px;
-  height: auto;
-}
-
-
-.footer-item h2 {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
-  color: #e8f3fa;
-}
-
-.social h2 {
-  padding-bottom: 30px;
-}
-
-.form h2,p {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 18px;
-  color: #0f3814;
-}
-
-
-
-.footer-base {
-  background-color: rgb(43, 15, 56);
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: #f9dbbb;
-  height: 40px;
-  padding-top: 10px;
-    }
-
-/* /////--Newsletter Form--////// */
-/* Style the form element with a border around it */
-form {
-  border: 4px solid #f1f1f1;
-}
-
-/* Add some padding and a grey background color to containers */
-.container {
-  padding: 20px;
-  background-color: #f1f1f1;
-}
-
-/* Style the input elements and the submit button */
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Add margins to the checkbox */
-input[type=checkbox] {
-  margin-top: 16px;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #9DC08B;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-
-
-/* //////---social media icons-----/////// */
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  margin: 5px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #9DC08B;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #9DC08B;
-  color: white;
-}
-
-.fa-github {
-  background-color: #9DC08B;
-  color: white;
-}
-
-.fa-instagram {
-  background-color: #9DC08B;
-  color: white;
-
+  .portfolio-text h4 {
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(249, 219, 187);
+  }
 }
