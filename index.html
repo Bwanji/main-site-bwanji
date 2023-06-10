@@ -1,146 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/bwanji-logo-grey.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Social Media Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/bwanji-logo-grey.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
 
-    <title>Home | Bwanji</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="menu-wrap">
-        <!-- Logo container -->
-        <a href="https://bwanji.digital" target="_blank" class="logo-wrap">
-          <img
-            class="logo"
-            src="images/logos/bwanji-logo-full-color.png"
-            alt="Logo"
-          />
+  <!-- Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>Home | Bwanji</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="menu-wrap">
+      <!-- Logo container -->
+      <a href="https://bwanji.digital" target="_blank" class="logo-wrap">
+        <img class="logo" src="images/logos/bwanji-logo-full-color.png" alt="Logo" />
+      </a>
+
+      <!-- When this is checked, nav menu is dropped -->
+      <input type="checkbox" id="nav-tog" />
+
+      <!-- Hamburger btn -->
+      <label for="nav-tog" class="drop-trigger">
+        <!-- Hamburg bars -->
+        <span class="btn-bar top"></span>
+        <span class="btn-bar middle"></span>
+        <span class="btn-bar bottom"></span>
+      </label>
+
+      <!-- Menu -->
+      <nav class="main-nav">
+        <!-- This covers the whole background of the dropped menu -->
+        <label for="nav-tog" class="nav-revert"></label>
+
+        <!-- Menu items -->
+        <a href="#web-design" class="nav-item">
+          <span>Design & Coding</span>
         </a>
+        <a href="#content-creation" class="nav-item">
+          <span> ICM </span>
+        </a>
+        <a href="#media-services" class="nav-item">
+          <span>Media Services</span>
+        </a>
+        <a href="#our-work" class="nav-item">
+          <span>Our Work</span>
+        </a>
+      </nav>
+    </div>
+  </header>
 
-        <!-- When this is checked, nav menu is dropped -->
-        <input type="checkbox" id="nav-tog" />
+  <!-- /////////---Sections---////////// -->
 
-        <!-- Hamburger btn -->
-        <label for="nav-tog" class="drop-trigger">
-          <!-- Hamburg bars -->
-          <span class="btn-bar top"></span>
-          <span class="btn-bar middle"></span>
-          <span class="btn-bar bottom"></span>
-        </label>
+  <!-- -------Web Design-------- -->
 
-        <!-- Menu -->
-        <nav class="main-nav">
-          <!-- This covers the whole background of the dropped menu -->
-          <label for="nav-tog" class="nav-revert"></label>
-
-          <!-- Menu items -->
-          <a href="#web-design" class="nav-item">
-            <span>Design & Coding</span>
-          </a>
-          <a href="#content-creation" class="nav-item">
-            <span> ICM </span>
-          </a>
-          <a href="#media-services" class="nav-item">
-            <span>Media Services</span>
-          </a>
-          <a href="#our-work" class="nav-item">
-            <span>Our Work</span>
-          </a>
-        </nav>
+  <main class="scroll-container">
+    <section id="web-design" class="item-1">
+      <div class="web-container">
+        <div class="web-item web-text">
+          <h1>Fast, Affordable Web Design & Hosting</h1>
+          <h4>
+            Get the complete suite of web design and applications services to
+            get you started
+          </h4>
+        </div>
+        <div class="web-item web-image">
+          <img src="images/hero.png" alt="" />
+        </div>
+        <div class="button-container">
+          <a href="#" class="button">Get Started</a>
+          <a href="#" class="button button-2">Learn More</a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- /////////---Sections---////////// -->
+    <!-----Internet Content Management----- -->
 
-    <!-- -------Web Design-------- -->
-
-    <main class="scroll-container">
-      <section id="web-design" class="item-1">
-        <div class="web-container">
-          <div class="web-item web-text">
-            <h1>Fast, Affordable Web Design & Hosting</h1>
-            <h4>
-              Get the complete suite of web design and applications services to
-              get you started
-            </h4>
-          </div>
-          <div class="web-item web-image">
-            <img src="images/hero.png" alt="" />
-          </div>
-          <div class="button-container">
-            <a href="#" class="button">Get Started</a>
-            <a href="#" class="button button-2">Learn More</a>
-          </div>
+    <section id="content-creation" class="item-1">
+      <div class="icm-container">
+        <div class="icm-item icm-text">
+          <h1>Internet Content Management Services</h1>
+          <h4>A complete suite of web services to get you started</h4>
         </div>
-      </section>
-
-      <!-----Internet Content Management----- -->
-
-      <section id="content-creation" class="item-1">
-        <div class="icm-container">
-          <div class="icm-item icm-text">
-            <h1>Internet Content Management Services</h1>
-            <h4>A complete suite of web services to get you started</h4>
-          </div>
-          <div class="icm-item icm-image">
-            <img src="images/icm-08.png" alt="" />
-          </div>
-          <div class="button-container">
-            <a href="#" class="button">Get Started</a>
-            <a href="#" class="button button-2">Learn More</a>
-          </div>
+        <div class="icm-item icm-image">
+          <img src="images/icm-08.png" alt="" />
         </div>
-      </section>
-
-      <!-----Media Services----- -->
-      <section id="media-services" class="item-1">
-        <div class="media-container">
-          <div class="media-item media-text">
-            <h1>Media Services</h1>
-            <h4>A complete suite of web services to get you started</h4>
-          </div>
-          <div class="media-item media-image">
-            <img src="images/media-07.png" alt="" />
-          </div>
-          <div class="button-container">
-            <a href="" class="button">Get Started</a>
-            <a href="" class="button button-2">Learn More</a>
-          </div>
+        <div class="button-container">
+          <a href="#" class="button">Get Started</a>
+          <a href="#" class="button button-2">Learn More</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- -------Our Work---------- -->
-      <section id="our-work" class="item-1">
-        <div class="portfolio-container">
-          <div class="portfolio-item media-text">
-            <h1>Our Work</h1>
-            <h4>A complete suite of web services to get you started</h4>
-          </div>
-          <div class="portfolio-item portfolio-image">
-            <img src="images/portfolio-01.png" alt="" />
-          </div>
-          <div class="button-container">
-            <a href="" class="button">Get Started</a>
-            <a href="" class="button button-2">Learn More</a>
-          </div>
+    <!-----Media Services----- -->
+    <section id="media-services" class="item-1">
+      <div class="media-container">
+        <div class="media-item media-text">
+          <h1>Media Services</h1>
+          <h4>A complete suite of web services to get you started</h4>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="media-item media-image">
+          <img src="images/media-07.png" alt="" />
+        </div>
+        <div class="button-container">
+          <a href="" class="button">Get Started</a>
+          <a href="" class="button button-2">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------Our Work---------- -->
+    <section id="our-work" class="item-1">
+      <div class="portfolio-container">
+        <div class="portfolio-item media-text">
+          <h1>Our Work</h1>
+          <h4>A complete suite of web services to get you started</h4>
+        </div>
+        <div class="portfolio-item portfolio-image">
+          <img src="images/portfolio-01.png" alt="" />
+        </div>
+        <div class="button-container">
+          <a href="" class="button">Get Started</a>
+          <a href="" class="button button-2">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer About Bwanji -->
+
+  <footer>
+    <div class="footer-base">
+      <h4>&copy; 2023 Design by Bwanji Digital</h4>
+    </div>
+  </footer>
+</body>
+
 </html>
