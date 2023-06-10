@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/bwanji-logo-grey.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Bwanji</title>
   <link rel="stylesheet" href="style.css" />
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,48 +16,45 @@
   <!-- Social Media Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <title>Home | Bwanji</title>
 </head>
-
 <body>
-  <header class="main-header">
-    <div class="menu-wrap">
-      <!-- Logo container -->
-      <a href="https://bwanji.digital" target="_blank" class="logo-wrap">
-        <img class="logo" src="images/logos/bwanji-logo-full-color.png" alt="Logo" />
-      </a>
+  <header>
+    
+    <!-- Upper Header -->
 
-      <!-- When this is checked, nav menu is dropped -->
-      <input type="checkbox" id="nav-tog" />
-
-      <!-- Hamburger btn -->
-      <label for="nav-tog" class="drop-trigger">
-        <!-- Hamburg bars -->
-        <span class="btn-bar top"></span>
-        <span class="btn-bar middle"></span>
-        <span class="btn-bar bottom"></span>
-      </label>
-
-      <!-- Menu -->
-      <nav class="main-nav">
-        <!-- This covers the whole background of the dropped menu -->
-        <label for="nav-tog" class="nav-revert"></label>
-
-        <!-- Menu items -->
-        <a href="#web-design" class="nav-item">
-          <span>Design & Coding</span>
-        </a>
-        <a href="#content-creation" class="nav-item">
-          <span> ICM </span>
-        </a>
-        <a href="#media-services" class="nav-item">
-          <span>Media Services</span>
-        </a>
-        <a href="#our-work" class="nav-item">
-          <span>Our Work</span>
-        </a>
-      </nav>
+    <div class="upper-bar">
+      <a class="active" href="/index.html"><i class="fa fa-home"></i></a>
+      <a href="#web-design"><i class="fa fa-search"></i></a>
+      <a href="#content-creation"><i class="fa fa-book"></i></a>
+      <a href="#our-work"><i class="fa fa-globe"></i></a>
+      <a href="#"><i class="fa fa-bars"></i></a>
     </div>
+
+    <!-- Bottom Header -->
+
+    <div class="bottom-header menu">
+      <a href="#web-design">
+        <img src="images/icons/coding.png" alt="Coding">
+        <h4>Coding</h4>
+      </a>
+      <a href="#">
+        <img src="images/icons/graphic-design.png" alt="Design">
+        <h4>Design</h4>
+      </a>
+      <a href="#content-creation">
+        <img src="images/icons/icm.png" alt="Content Creation">
+        <h4>Content</h4>
+      </a>
+      <a href="#media-services">
+        <img src="images/icons/Media_content-creator.png" alt="Media Services">
+        <h4>Media</h4>
+      </a>
+      <a href="#">
+        <img src="images/icons/menu.png" alt="Home"> 
+        <h4>More</h4> 
+      </a>
+    </div>
+  
   </header>
 
   <!-- /////////---Sections---////////// -->
